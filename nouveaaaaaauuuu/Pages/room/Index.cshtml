@@ -1,0 +1,228 @@
+﻿@page
+@model nouveaaaaaauuuu.Pages.Room.IndexModel
+@{
+    ViewData["Title"] = "Liste des Salles";
+}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Système de Réservation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa; /* Couleur de fond douce */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 3rem;
+            max-width: 90%;
+            margin: auto;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #343a40;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .alert {
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+        }
+
+        .card {
+            border: 1px solid #dee2e6;
+            border-radius: 0.75rem;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+            .card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            }
+
+        .card-header {
+            background-color: #007bff;
+            color: #ffffff;
+            font-weight: 600;
+            padding: 1rem;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            border-radius: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            color: #ffffff;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+            .btn-primary:hover {
+                background-color: #0056b3;
+                border-color: #004085;
+            }
+
+        .btn-secondary {
+            background-color: #007bff;
+            border-color: #007bff;
+            border-radius: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            color: #ffffff;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+            text-transform: uppercase;
+        }
+
+            .btn-secondary:hover {
+                background-color: #0056b3;
+                border-color: #004085;
+            }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .table {
+            margin-top: 1.5rem;
+        }
+
+            .table thead {
+                background-color: #007bff;
+                color: #ffffff;
+                font-weight: 600;
+            }
+
+            .table tbody tr:hover {
+                background-color: #e9ecef;
+                cursor: pointer;
+            }
+
+        .input-group {
+            margin-bottom: 1.5rem;
+        }
+
+            .input-group .form-control {
+                border-radius: 0.5rem 0 0 0.5rem;
+            }
+
+            .input-group .btn {
+                border-radius: 0 0.5rem 0.5rem 0;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center mb-4"><i class="bi bi-building"></i> Liste des Salles</h2>
+
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <div class="alert alert-success" role="alert">
+                @TempData["SuccessMessage"]
+            </div>
+        }
+
+        @if (TempData["ErrorMessage"] != null)
+        {
+            <div class="alert alert-danger" role="alert">
+                @TempData["ErrorMessage"]
+            </div>
+        }
+
+        <div class="text-center mb-4">
+            <a asp-page="./create" class="btn btn-primary">
+                <i class="bi bi-plus-circle"></i> Ajouter une Salle
+            </a>
+        </div>
+
+        <div class="mb-4">
+            <form method="get" asp-page="./Index">
+                <div class="input-group">
+                    <input type="text" name="SearchTerm" value="@Model.SearchTerm" class="form-control" placeholder="Rechercher une salle" />
+                    <button class="btn btn-primary" type="submit">
+                        <i class="bi bi-search"></i> Rechercher
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                Liste des Salles
+            </div>
+            <div class="card-body">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nom</th>
+                            <th>Capacité</th>
+                            <th>Disponible</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model.Rooms != null && Model.Rooms.Any())
+                        {
+                            @foreach (var room in Model.Rooms)
+                            {
+                                <tr>
+                                    <td>@room.Id</td>
+                                    <td>@room.Name</td>
+                                    <td>@room.Capacity</td>
+                                    <td>@(room.IsAvailable ? "Oui" : "Non")</td>
+                                    <td>
+                                        <div class="btn-group" role="group" aria-label="Actions">
+                                            <a asp-page="./edite" asp-route-id="@room.Id" class="btn btn-warning btn-sm">
+                                                <i class="bi bi-pencil"></i> Modifier
+                                            </a>
+                                            <form method="post" asp-page-handler="Delete" asp-route-id="@room.Id" class="d-inline">
+                                                <button type="submit" class="btn btn-danger btn-sm">
+                                                    <i class="bi bi-trash-fill"></i> Supprimer
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr>
+                                <td colspan="5" class="text-center">Aucune salle disponible</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <p class="text-center mt-4">
+            <a asp-page="/Reservation/Index" class="btn btn-secondary">
+                <i class="bi bi-calendar-check"></i> Liste des Réservations
+            </a>
+        </p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

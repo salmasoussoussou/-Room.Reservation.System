@@ -1,0 +1,142 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ousso\\source\\repos\\PROJET1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A8A3E6F6-AF95-49E5-88B3-6740806A13C7}|nouveaaaaaauuuu\\nouveaaaaaauuuu.csproj|c:\\users\\ousso\\source\\repos\\projet1\\nouveaaaaaauuuu\\pages\\room\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8A3E6F6-AF95-49E5-88B3-6740806A13C7}|nouveaaaaaauuuu\\nouveaaaaaauuuu.csproj|solutionrelative:nouveaaaaaauuuu\\pages\\room\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8A3E6F6-AF95-49E5-88B3-6740806A13C7}|nouveaaaaaauuuu\\nouveaaaaaauuuu.csproj|c:\\users\\ousso\\source\\repos\\projet1\\nouveaaaaaauuuu\\pages\\room\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8A3E6F6-AF95-49E5-88B3-6740806A13C7}|nouveaaaaaauuuu\\nouveaaaaaauuuu.csproj|solutionrelative:nouveaaaaaauuuu\\pages\\room\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8A3E6F6-AF95-49E5-88B3-6740806A13C7}|nouveaaaaaauuuu\\nouveaaaaaauuuu.csproj|c:\\users\\ousso\\source\\repos\\projet1\\nouveaaaaaauuuu\\pages\\room\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8A3E6F6-AF95-49E5-88B3-6740806A13C7}|nouveaaaaaauuuu\\nouveaaaaaauuuu.csproj|solutionrelative:nouveaaaaaauuuu\\pages\\room\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9998FB13-A110-4D60-B2CF-EF42E6CB7F36}|projet1\\projet1.csproj|c:\\users\\ousso\\source\\repos\\projet1\\projet1\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9998FB13-A110-4D60-B2CF-EF42E6CB7F36}|projet1\\projet1.csproj|solutionrelative:projet1\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8A3E6F6-AF95-49E5-88B3-6740806A13C7}|nouveaaaaaauuuu\\nouveaaaaaauuuu.csproj|c:\\users\\ousso\\source\\repos\\projet1\\nouveaaaaaauuuu\\pages\\room\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8A3E6F6-AF95-49E5-88B3-6740806A13C7}|nouveaaaaaauuuu\\nouveaaaaaauuuu.csproj|solutionrelative:nouveaaaaaauuuu\\pages\\room\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9998FB13-A110-4D60-B2CF-EF42E6CB7F36}|projet1\\projet1.csproj|c:\\users\\ousso\\source\\repos\\projet1\\projet1\\mdl\\mdlroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9998FB13-A110-4D60-B2CF-EF42E6CB7F36}|projet1\\projet1.csproj|solutionrelative:projet1\\mdl\\mdlroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8A3E6F6-AF95-49E5-88B3-6740806A13C7}|nouveaaaaaauuuu\\nouveaaaaaauuuu.csproj|c:\\users\\ousso\\source\\repos\\projet1\\nouveaaaaaauuuu\\pages\\reservation\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8A3E6F6-AF95-49E5-88B3-6740806A13C7}|nouveaaaaaauuuu\\nouveaaaaaauuuu.csproj|solutionrelative:nouveaaaaaauuuu\\pages\\reservation\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 229,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\ousso\\source\\repos\\PROJET1\\nouveaaaaaauuuu\\Pages\\room\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "nouveaaaaaauuuu\\Pages\\room\\Create.cshtml.cs",
+              "ToolTip": "C:\\Users\\ousso\\source\\repos\\PROJET1\\nouveaaaaaauuuu\\Pages\\room\\Create.cshtml.cs",
+              "RelativeToolTip": "nouveaaaaaauuuu\\Pages\\room\\Create.cshtml.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAuwFEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T22:40:49.28Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\ousso\\source\\repos\\PROJET1\\nouveaaaaaauuuu\\Pages\\room\\Create.cshtml",
+              "RelativeDocumentMoniker": "nouveaaaaaauuuu\\Pages\\room\\Create.cshtml",
+              "ToolTip": "C:\\Users\\ousso\\source\\repos\\PROJET1\\nouveaaaaaauuuu\\Pages\\room\\Create.cshtml",
+              "RelativeToolTip": "nouveaaaaaauuuu\\Pages\\room\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-06T22:40:48.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RoomController.cs",
+              "DocumentMoniker": "C:\\Users\\ousso\\source\\repos\\PROJET1\\PROJET1\\Controllers\\RoomController.cs",
+              "RelativeDocumentMoniker": "PROJET1\\Controllers\\RoomController.cs",
+              "ToolTip": "C:\\Users\\ousso\\source\\repos\\PROJET1\\PROJET1\\Controllers\\RoomController.cs",
+              "RelativeToolTip": "PROJET1\\Controllers\\RoomController.cs",
+              "ViewState": "AQIAACUAAAAAvJmZmZnxvy0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T22:33:16.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ousso\\source\\repos\\PROJET1\\nouveaaaaaauuuu\\Pages\\room\\Index.cshtml",
+              "RelativeDocumentMoniker": "nouveaaaaaauuuu\\Pages\\room\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ousso\\source\\repos\\PROJET1\\nouveaaaaaauuuu\\Pages\\room\\Index.cshtml",
+              "RelativeToolTip": "nouveaaaaaauuuu\\Pages\\room\\Index.cshtml",
+              "ViewState": "AQIAAM8AAAAAAAAAAAAqwOQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-06T22:12:35.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\ousso\\source\\repos\\PROJET1\\nouveaaaaaauuuu\\Pages\\room\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "nouveaaaaaauuuu\\Pages\\room\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\ousso\\source\\repos\\PROJET1\\nouveaaaaaauuuu\\Pages\\room\\Index.cshtml.cs",
+              "RelativeToolTip": "nouveaaaaaauuuu\\Pages\\room\\Index.cshtml.cs",
+              "ViewState": "AQIAADEAAAAA1MzMzEwZwCkAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T22:09:40.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "mdlroom.cs",
+              "DocumentMoniker": "C:\\Users\\ousso\\source\\repos\\PROJET1\\PROJET1\\mdl\\mdlroom.cs",
+              "RelativeDocumentMoniker": "PROJET1\\mdl\\mdlroom.cs",
+              "ToolTip": "C:\\Users\\ousso\\source\\repos\\PROJET1\\PROJET1\\mdl\\mdlroom.cs",
+              "RelativeToolTip": "PROJET1\\mdl\\mdlroom.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T22:09:08.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\ousso\\source\\repos\\PROJET1\\nouveaaaaaauuuu\\Pages\\reservation\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "nouveaaaaaauuuu\\Pages\\reservation\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\ousso\\source\\repos\\PROJET1\\nouveaaaaaauuuu\\Pages\\reservation\\Index.cshtml.cs",
+              "RelativeToolTip": "nouveaaaaaauuuu\\Pages\\reservation\\Index.cshtml.cs",
+              "ViewState": "AQIAAHwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T22:08:33.133Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

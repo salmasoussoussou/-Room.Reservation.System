@@ -1,0 +1,78 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+%{
+#include <stdio.h>
+typedef struct
+{ 
+    char* valeur;
+    int occurence;
+} mot;
+mot mots[500];
+int nbrmot=0;
+int comparer(char * word1, char*word2){
+    int t1=siezeof(word1)/sizeof(char*);
+    int t2= sizeof(word2)/sizeof(char*);
+    if(t1!=t2)//KAN39arn la taille dyal dok les mots ila kano different kaychroj ila kano b7ab7al kaydoz lfor
+    return 1;
+    for(int i=0;i<t1;i++)//kay9arn les caractere
+    if(word1[i]!=word2[i])
+    return 1;
+    return 0;
+}
+int ajouter_mot(char * word){
+    for(int i=0;i<nbrmot;i++)
+    {
+        if(comparer(mots[i].valeur,word)==0)
+        mots[i].occurence++;
+        return 0;
+    }
+    mot nouveau;
+    
+    nouveau.valeur=word;
+        nouveau.occurence=1;
+        mots[nbrmot]=nouveau;
+        nbrmot++;
+        return 1;
+
+
+}
+void chercher_max(){
+    int max=0;
+    for(int i=0;i<nbrmot;i++)
+    if(mots[i].occurence<mots[max].occurence)
+    {max=i;}
+    printf("le mots le plus repondu est %s:%d", mots[max].valeur,mots[max].occurence);
+}
+
+void lister_mot()
+{
+        for(int i=0;i<nbrmot;i++){
+            printf("le mot est%s occurence est %d",mots[i].valeur,mot[i].occurence);
+        }
+    
+
+}
+
+%}
+mot [a-zA-Z]+
+%%
+{mot} {ajouter_mot(yytext);}
+.+{}
+%%
+int main()
+{
+    FILE *f= fopen("in1.txt","r");
+    yyin=f;
+    lister_mot();
+    yyles();
+    chercher_max();
+}
+
+
+
+

@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - système de réservation de salles</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <style>
+        .navbar {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .navbar-brand img {
+            max-height: 40px;
+        }
+
+        .navbar-nav .nav-link {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            font-size: 0.875rem;
+        }
+
+        .navbar-nav .nav-item + .nav-item {
+            margin-left: 30px;
+        }
+
+        .navbar-nav .nav-link.btn {
+            color: #ffffff !important;
+            text-decoration: none;
+        }
+
+            
+
+        main {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .footer {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            font-size: 0.875rem;
+        }
+
+        .nav-btn {
+            color: #fff;
+            border-radius: 5px;
+            padding: 0.5rem 1rem;
+        }
+
+            
+
+        .nav-btn-primary {
+            background-color: #007bff;
+        }
+
+        .nav-btn-secondary {
+            background-color: #28a745;
+        }
+
+        .nav-btn-danger {
+            background-color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light bg-primary border-bottom box-shadow mb-2">
+            <div class="container">
+                <a class="navbar-brand" asp-page="/Index">
+                    <img src="~/Image/PIXEL.jpeg" class="img-thumbnail logo-img" />
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end">
+                    <ul class="navbar-nav flex-grow-1 justify-content-end">
+                        <!-- Exemple d'ajout dans la barre de navigation -->
+                        
+                        <li class="nav-item">
+       
+                            <a class="nav-link btn nav-btn nav-btn-primary" asp-area="" asp-page="/Account/Login">Connexion</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link btn nav-btn nav-btn-danger" asp-area="" asp-page="/Account/Logout">Déconnexion</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+   
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

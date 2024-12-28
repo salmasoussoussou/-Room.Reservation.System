@@ -1,0 +1,110 @@
+/* Styles de la barre de navigation */
+
+.navbar {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.navbar-brand img {
+    max-height: 40px;
+}
+    
+
+        
+
+
+
+
+
+
+/* Redimensionner l'image du logo dans la barre de navigation */
+.logo-img {
+    max-width: 60px; /* Ajustez la largeur maximale selon vos besoins, ou retirez cette ligne pour la taille d'origine */
+    height: auto; /* Conserve les proportions de l'image */
+    border-radius: 0; /* Supprime le bord arrondi */
+    filter: grayscale(0%); /* Appliquez le filtre de votre choix (ex: gris) */
+    transition: filter 0.3s ease; /* Transition pour le filtre */
+}
+
+    .logo-img:hover {
+        filter: grayscale(50%); /* Ajouter un filtre en niveaux de gris au survol (optionnel) */
+    }
+
+
+
+
+
+
+
+/* Ajouter du style pour l'en-tête du tableau */
+.table thead th {
+    background-color: #000000; /* Couleur de fond noire */
+    
+}
+.table {
+    width: 100%; /* Assure que la table occupe toute la largeur disponible */
+    border-collapse: collapse; /* Fusionne les bordures */
+    /* Hauteur minimale des lignes pour garantir une taille uniforme */
+}
+.table tbody tr{
+    height: 50px; /* Ajustez la hauteur des lignes selon vos besoins */
+}
+/* Styles pour les lignes de tableau */
+
+
+
+
+/* Styles pour les boutons de la barre de navigation */
+.navbar .nav-link {
+    position: relative;
+    padding: 10px 15px;
+    border-radius: 0.25rem; /* Coins arrondis pour les boutons */
+    font-weight: 500; /* Texte légèrement en gras */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition douce pour les effets */
+}
+
+    .navbar .nav-link::after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 0;
+        background-color: #ffffff; /* Couleur de la bordure sous les boutons */
+        transition: width 0.3s ease; /* Transition douce pour l'effet de survol */
+    }
+
+    .navbar .nav-link:hover::after {
+        width: 100%; /* Remplit la bordure sous le bouton au survol */
+    }
+
+    .navbar .nav-link.connexion {
+        background-color: #007bff; /* Bleu clair pour la connexion */
+        border-color: #007bff;
+    }
+
+        .navbar .nav-link.connexion:hover {
+            background-color: #0056b3; /* Bleu plus foncé au survol */
+            border-color: #0056b3;
+        }
+
+    .navbar .nav-link.register {
+        background-color: #28a745; /* Vert pour l'inscription */
+        border-color: #28a745;
+    }
+
+        .navbar .nav-link.register:hover {
+            background-color: #218838; /* Vert plus foncé au survol */
+            border-color: #218838;
+        }
+
+    .navbar .nav-link.logout {
+        background-color: #dc3545; /* Rouge pour la déconnexion */
+        border-color: #dc3545;
+    }
+
+        .navbar .nav-link.logout:hover {
+            background-color: #c82333; /* Rouge plus foncé au survol */
+            border-color: #c82333;
+        }
